@@ -4,18 +4,19 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="624.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="624.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Circuit.Controller">
+
    <children>
       <Button layoutX="994.0" layoutY="556.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="92.0" text="Correr" />
       <VBox prefHeight="636.0" prefWidth="149.0">
          <children>
-            <Button mnemonicParsing="false" prefHeight="90.0" prefWidth="150.0" text="Button" />
-            <Button mnemonicParsing="false" prefHeight="90.0" prefWidth="150.0" text="Button" />
-            <Button mnemonicParsing="false" prefHeight="87.0" prefWidth="150.0" text="Button" />
-            <Button mnemonicParsing="false" prefHeight="90.0" prefWidth="150.0" text="Button" />
-            <Button mnemonicParsing="false" prefHeight="90.0" prefWidth="150.0" text="Button" />
-            <Button mnemonicParsing="false" prefHeight="90.0" prefWidth="150.0" text="Button" />
-            <Button mnemonicParsing="false" prefHeight="90.0" prefWidth="150.0" text="Button" />
+            <Button fx:id="btn1" mnemonicParsing="false" onAction="#callAND" prefHeight="90.0" prefWidth="150.0" text="AND"/>
+            <Button fx:id="btn2" mnemonicParsing="false" onAction="#callNAND" prefHeight="90.0" prefWidth="150.0" text="NAND"/>
+            <Button fx:id="btn3" mnemonicParsing="false" onAction="#callOR" prefHeight="87.0" prefWidth="150.0" text="OR"/>
+            <Button fx:id="btn4" mnemonicParsing="false" onAction="#callNOR" prefHeight="90.0" prefWidth="150.0" text="NOR"/>
+            <Button fx:id="btn5" mnemonicParsing="false" onAction="#callNOT" prefHeight="90.0" prefWidth="150.0" text="NOT"/>
+            <Button fx:id="btn6" mnemonicParsing="false" onAction="#callXOR" prefHeight="90.0" prefWidth="150.0" text="XOR"/>
+            <Button fx:id="btn7" mnemonicParsing="false" onAction="#callXNOR" prefHeight="90.0" prefWidth="150.0" text="XNOR"/>
          </children>
       </VBox>
    </children>
