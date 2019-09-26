@@ -5,7 +5,9 @@ import javafx.application.Platform;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.shape.Circle;
+import javafx.scene.input.ClipboardContent;
+import javafx.scene.input.Dragboard;
+import javafx.scene.input.DragEvent;
 import javafx.stage.Stage;
 
 import java.awt.*;
@@ -21,6 +23,10 @@ public class Main extends Application {
         primaryStage.setScene(new Scene(root, 1100, 630));
         primaryStage.show();
     }
+
+
+
+
 
     public static void main(String[] args) {
         launch(args);

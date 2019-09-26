@@ -1,41 +1,45 @@
 package Circuit;
 
 import Circuit.Puertas.*;
+import javafx.fxml.FXML;
 import javafx.scene.control.Button;
+import javafx.scene.input.DragEvent;
+import javafx.scene.input.MouseEvent;
+import javafx.scene.layout.*;
+import javafx.scene.shape.Circle;
+import javafx.scene.shape.Rectangle;
+import javafx.scene.shape.Shape;
+
 
 public class Controller {
 
-    public Button btn1,btn2,btn3,btn4,btn5,btn6,btn7;
+    //Variables de la clase
+    double X, Y;
+    @FXML
+    private Rectangle and;
+    @FXML
+    AnchorPane right_pane;
 
-    public void callAND(){
-        AND A = new AND();
-        A.AND();
+
+    public void initialize(){
+        and.setOnMousePressed(event -> {
+            X = event.getSceneX();
+            Y = event.getSceneY();
+            System.out.println("X =" + X);
+            System.out.println("Y =" + Y);
+        });
+        and.setOnMouseDragged(event -> {
+            System.out.println("Draging");
+            X = event.getSceneX();
+            Y = event.getSceneY();
+            System.out.println(X);
+            System.out.println(Y);
+
+
+
+        });
     }
-    public void callNAND(){
-        NAND N = new NAND();
-        N.NAND();
+
 
     }
-    public void callOR(){
-        OR or = new OR();
-        or.OR();
 
-    }
-    public void callNOR(){
-        NOR nr = new NOR();
-        nr.NOR();
-    }
-    public void callNOT(){
-        NOT nt = new NOT();
-        nt.NOT();
-
-    }
-    public void callXOR(){
-        XOR xr = new XOR();
-        xr.XOR();
-    }
-    public void callXNOR(){
-        XNOR xn = new XNOR();
-        xn.XNOR();
-    }
-}
