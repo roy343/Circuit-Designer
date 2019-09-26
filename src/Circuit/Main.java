@@ -20,7 +20,7 @@ public class Main extends Application {
         Platform.isImplicitExit();
         primaryStage.setTitle("Circuit Designer");
         primaryStage.setResizable(false);
-        primaryStage.setScene(new Scene(root, 1100, 630));
+        primaryStage.setScene(new Scene(root, 1200, 730));
         primaryStage.show();
     }
 
