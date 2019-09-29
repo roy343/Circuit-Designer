@@ -45,7 +45,6 @@ public class Controller {
             double ANDX = event.getSceneX() - X ;
             double ANDY = event.getSceneY() - Y ;
             and.relocate(event.getSceneX() + ANDX, event.getSceneY() + ANDY);
-
         });
 
         nand.setOnMousePressed(event -> {
@@ -60,7 +59,6 @@ public class Controller {
             double NANDX = event.getSceneX() - X ;
             double NANDY = event.getSceneY() - Y ;
             nand.relocate(event.getSceneX() + NANDX, event.getSceneY() + NANDY);
-
         });
 
         or.setOnMousePressed(event ->{
@@ -132,7 +130,6 @@ public class Controller {
             double XNORY = event.getSceneY() - Y ;
             xnor.relocate(event.getSceneX() + XNORX, event.getSceneY() + XNORY);
         });
-
     }
 
 

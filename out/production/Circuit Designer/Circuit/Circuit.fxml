@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
-<?import javafx.scene.shape.Rectangle?>
 
 <AnchorPane fx:id="Anchorpane" minHeight="730.0" minWidth="1200.0" prefHeight="558.0" prefWidth="847.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Circuit.Controller">
    <children>
@@ -11,36 +12,64 @@
       <Button layoutX="1075.0" layoutY="609.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="110.0" text="Save" />
       <Pane fx:id="and" layoutX="13.0" layoutY="14.0" onDragDetected="#HandleDrag" prefHeight="86.0" prefWidth="150.0">
          <children>
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff541f" height="86.0" stroke="#410f08" strokeType="INSIDE" width="150.0" />
+            <ImageView fitHeight="86.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@resources/AND.PNG" />
+               </image>
+            </ImageView>
          </children>
       </Pane>
       <Pane fx:id="nand" layoutX="13.0" layoutY="110.0" onDragDetected="#HandleDrag" prefHeight="86.0" prefWidth="150.0">
          <children>
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#56c221" height="86.0" stroke="BLACK" strokeType="INSIDE" width="150.0" />
+            <ImageView fitHeight="86.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@resources/NAND.PNG" />
+               </image>
+            </ImageView>
          </children>
       </Pane>
       <Pane fx:id="or" layoutX="13.0" layoutY="206.0" onDragDetected="#HandleDrag" prefHeight="86.0" prefWidth="150.0">
          <children>
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff1f2f" height="86.0" stroke="BLACK" strokeType="INSIDE" width="150.0" />
+            <ImageView fitHeight="86.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@resources/OR.PNG" />
+               </image>
+            </ImageView>
          </children></Pane>
       <Pane fx:id="not" layoutX="13.0" layoutY="300.0" onDragDetected="#HandleDrag" prefHeight="86.0" prefWidth="150.0">
          <children>
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#215dff" height="86.0" stroke="BLACK" strokeType="INSIDE" width="150.0" />
+            <ImageView fitHeight="86.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@resources/NOR.PNG" />
+               </image>
+            </ImageView>
          </children>
       </Pane>
-      <Pane fx:id="nor" layoutX="13.0" layoutY="395.0" onDragDetected="#HandleDrag" prefHeight="86.0" prefWidth="150.0">
+      <Pane fx:id="nor" layoutX="13.0" layoutY="386.0" onDragDetected="#HandleDrag" prefHeight="86.0" prefWidth="150.0">
          <children>
-            <Rectangle  arcHeight="5.0" arcWidth="5.0" fill="#f0ff21" height="86.0" onDragDetected="#HandleDrag" stroke="BLACK" strokeType="INSIDE" width="150.0" />
+            <ImageView fitHeight="86.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@resources/NOT.PNG" />
+               </image>
+            </ImageView>
          </children>
       </Pane>
       <Pane layoutX="13.0" layoutY="489.0" onDragDetected="#HandleDrag" prefHeight="86.0" prefWidth="150.0" fx:id="xor">
          <children>
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#68ff1f" height="86.0" stroke="BLACK" strokeType="INSIDE" width="150.0" />
+            <ImageView fitHeight="86.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@resources/XOR.PNG" />
+               </image>
+            </ImageView>
          </children>
       </Pane>
-      <Pane fx:id="xnor" layoutX="13.0" layoutY="582.0" onDragDetected="#HandleDrag" prefHeight="86.0" prefWidth="150.0">
+      <Pane layoutX="13.0" layoutY="582.0" onDragDetected="#HandleDrag" prefHeight="86.0" prefWidth="150.0" fx:id="xnor">
          <children>
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c50b0b" height="86.0" stroke="BLACK" strokeType="INSIDE" width="150.0" />
+            <ImageView fitHeight="86.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@resources/XNOR.PNG" />
+               </image>
+            </ImageView>
          </children>
       </Pane>
    </children>
