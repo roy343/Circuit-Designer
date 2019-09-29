@@ -1,5 +1,6 @@
 package Circuit;
 
+import Circuit.Puertas.XNOR;
 import javafx.application.Application;
 import javafx.application.Platform;
 import javafx.fxml.FXMLLoader;
@@ -22,6 +23,7 @@ public class Main extends Application {
         primaryStage.setResizable(false);
         primaryStage.setScene(new Scene(root, 1200, 730));
         primaryStage.show();
+
     }
 
 
