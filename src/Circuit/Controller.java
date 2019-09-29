@@ -21,38 +21,28 @@ import javafx.scene.shape.Rectangle;
 public class Controller {
 
     //Variables de la clase
-    double X, Y;
+    private double X, Y;
     @FXML
-    public Pane and,nand,or,nor,not,xor,xnor;
-
+    private Pane and,nand,or,nor,not,xor,xnor;
     @FXML
-    AnchorPane Anchorpane;
+    private AnchorPane Anchorpane;
 
 
 
-
+    //Funcion que se encarga del moviemiento de los elementos de la ventana
     public void HandleDrag(){
 
-        and.setOnMousePressed(event -> {
-            X = event.getSceneX();
-            Y = event.getSceneY();
-            System.out.println("X =" + X);
-            System.out.println("Y =" + Y);
-        });
+        //Moviemiento de la compuerta AND
         and.setOnMouseDragged(event -> {
             X = event.getSceneX();
             Y = event.getSceneY();
             double ANDX = event.getSceneX() - X ;
             double ANDY = event.getSceneY() - Y ;
             and.relocate(event.getSceneX() + ANDX, event.getSceneY() + ANDY);
+
         });
 
-        nand.setOnMousePressed(event -> {
-            X = event.getSceneX();
-            Y = event.getSceneY();
-            System.out.println("X =" + X);
-            System.out.println("Y =" + Y);
-        });
+        //Moviemiento de la compuerta NAND
         nand.setOnMouseDragged(event -> {
             X = event.getSceneX();
             Y = event.getSceneY();
@@ -61,12 +51,7 @@ public class Controller {
             nand.relocate(event.getSceneX() + NANDX, event.getSceneY() + NANDY);
         });
 
-        or.setOnMousePressed(event ->{
-            X = event.getSceneX();
-            Y = event.getSceneY();
-            System.out.println("X =" + X);
-            System.out.println("Y =" + Y);
-        });
+        //Moviemiento de la compuerta OR
         or.setOnMouseDragged(event -> {
             X = event.getSceneX();
             Y = event.getSceneY();
@@ -75,12 +60,7 @@ public class Controller {
             or.relocate(event.getSceneX() + ORX, event.getSceneY() + ORY);
         });
 
-        nor.setOnMousePressed(event ->{
-            X = event.getSceneX();
-            Y = event.getSceneY();
-            System.out.println("X =" + X);
-            System.out.println("Y =" + Y);
-        });
+        //Moviemiento de la compuerta NOR
         nor.setOnMouseDragged(event -> {
             X = event.getSceneX();
             Y = event.getSceneY();
@@ -89,12 +69,7 @@ public class Controller {
             nor.relocate(event.getSceneX() + NORX, event.getSceneY() + NORY);
         });
 
-        not.setOnMousePressed(event ->{
-            X = event.getSceneX();
-            Y = event.getSceneY();
-            System.out.println("X =" + X);
-            System.out.println("Y =" + Y);
-        });
+        //Moviemiento de la compuerta NOT
         not.setOnMouseDragged(event -> {
             X = event.getSceneX();
             Y = event.getSceneY();
@@ -103,12 +78,7 @@ public class Controller {
             not.relocate(event.getSceneX() + NOTX, event.getSceneY() + NOTY);
         });
 
-        xor.setOnMousePressed(event ->{
-            X = event.getSceneX();
-            Y = event.getSceneY();
-            System.out.println("X =" + X);
-            System.out.println("Y =" + Y);
-        });
+        //Moviemiento de la compuerta XOR
         xor.setOnMouseDragged(event -> {
             X = event.getSceneX();
             Y = event.getSceneY();
@@ -117,12 +87,7 @@ public class Controller {
             xor.relocate(event.getSceneX() + XORX, event.getSceneY() + XORY);
         });
 
-        xnor.setOnMousePressed(event ->{
-            X = event.getSceneX();
-            Y = event.getSceneY();
-            System.out.println("X =" + X);
-            System.out.println("Y =" + Y);
-        });
+        //Moviemiento de la compuerta XNOR
         xnor.setOnMouseDragged(event -> {
             X = event.getSceneX();
             Y = event.getSceneY();

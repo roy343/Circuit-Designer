@@ -15,6 +15,7 @@ import java.awt.*;
 
 public class Main extends Application {
 
+    //Inicializador de la ventana
     @Override
     public void start(Stage primaryStage) throws Exception {
         Parent root = FXMLLoader.load(getClass().getResource("Circuit.fxml"));
@@ -29,7 +30,7 @@ public class Main extends Application {
 
 
 
-
+    //Metodo main que inicia el programa
     public static void main(String[] args) {
         launch(args);
     }
