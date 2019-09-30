@@ -3,7 +3,7 @@ package Circuit.Puertas;
 public class Linea{
 
     //Entradas y salida del nodo
-    private Linea entry1;
+    private Linea entry;
     private Linea exit;
 
     //Verificadores de corriente
@@ -11,14 +11,7 @@ public class Linea{
     public boolean o1;
 
     //Constructor de la clase
-    public Linea(NOT entry1, NOT exit, boolean i1, boolean o1) {
-    }
-
-    //Funcion que dicta que si la compuerta es el primer elemento del circuito siempre retorne un valor positivo
-    private void firsElement(){
-        if(entry1 == null){
-            o1 = true;
-        }
+    public Linea(Linea entry, Linea exit, boolean i1, boolean o1) {
     }
 
     //Devuelve el valor de i1
