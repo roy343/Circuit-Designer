@@ -25,7 +25,7 @@ public class Linea{
     }
 
     //Funcion encargada de la logica de la puerta
-    public void NOT(boolean i1, boolean o1){
+    public void Lista(boolean i1, boolean o1){
         i1 = geti1();
         o1 = geto1();
 
